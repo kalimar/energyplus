@@ -1,0 +1,19 @@
+{ "name": "Energy Plus",
+  "scopeName": "source.EnergyPlus",
+  "fileTypes": ["idf"],
+  "patterns": [
+  { "name": "ClassTitle.header.EnergyPlus",
+	"match": "!-\\s+===========\\s+ALL\\sOBJECTS\\sIN\\sCLASS:\\s.+$",
+	"comment": "Class Titles"	},
+  {	"name": "SimulationControl.complex.EnergyPlus",
+	"begin": "^Schedule:(Compact|File|Constant),",
+	"patterns": [
+		{ "include": "$self" },
+		{	"name": "block.EnergyPlus",
+			"match": "."
+			}
+			],
+			"end": ";\\s+!-\\s.+$" }
+  ],
+  "uuid": "51c0622d-7600-4cf6-93a8-4489f324380b"
+}
