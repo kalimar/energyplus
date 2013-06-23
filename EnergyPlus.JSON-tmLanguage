@@ -5,11 +5,11 @@
   { "name": "ClassTitle.header.EnergyPlus",
 	"match": "!-\\s+===========\\s+ALL\\sOBJECTS\\sIN\\sCLASS:\\s.+$",
 	"comment": "Class Titles"	},
-  {	"name": "SimulationControl.complex.EnergyPlus",
-	"begin": "^Schedule:(Compact|File|Constant),",
+  {	"name": "schedule.complex.EnergyPlus",
+	"begin": "^Schedule:[A-Za-z:]+,$",
 	"patterns": [
 		{ "include": "$self" },
-		{	"name": "block.EnergyPlus",
+		{	"name": "schedule.block.EnergyPlus",
 			"match": "."
 			}
 			],

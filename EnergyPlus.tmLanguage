@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>idf</string>
+	</array>
+	<key>name</key>
+	<string>Energy Plus</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Class Titles</string>
+			<key>match</key>
+			<string>!-\s+===========\s+ALL\sOBJECTS\sIN\sCLASS:\s.+$</string>
+			<key>name</key>
+			<string>ClassTitle.header.EnergyPlus</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^Schedule:[A-Za-z:]+$</string>
+			<key>end</key>
+			<string>;\s+!-\s.+$</string>
+			<key>name</key>
+			<string>schedule.complex.EnergyPlus</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>schedule.block.EnergyPlus</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.EnergyPlus</string>
+	<key>uuid</key>
+	<string>51c0622d-7600-4cf6-93a8-4489f324380b</string>
+</dict>
+</plist>

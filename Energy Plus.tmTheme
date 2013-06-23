@@ -5,7 +5,7 @@
 	<key>author</key>
 	<string>David Heinemeier Hansson</string>
 	<key>name</key>
-	<string>All Hallow's Eve</string>
+	<string>All Hallow's Energy Plus</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -272,15 +272,15 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Simulation Control Block</string>
+			<string>Schedule Control Block</string>
 			<key>scope</key>
-			<string>SimulationControl.complex.EnergyPlus</string>
+			<string>schedule.complex.EnergyPlus</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#990099</string>
+				<string>#BBBBBB</string>
 			</dict>
 		</dict>
 		<dict>
@@ -293,7 +293,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FF3399</string>
+				<string>#CCCCCC</string>
 			</dict>
 		</dict>
 	</array>
